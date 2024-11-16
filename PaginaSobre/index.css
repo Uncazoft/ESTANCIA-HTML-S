@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Para asegurar que el cuerpo tenga al menos la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #072B4F;
+    padding: 10px 0;
+    height: 50px;
+}
+
+
+/* Navegación */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contenido principal */
+.content {
+    padding: 5px;
+    max-width: 800px;
+    margin: 5rem auto;
+    flex: 1; /* Para que el contenido principal ocupe el espacio disponible */
+}
+
+.section {
+    margin-bottom: 60px; /* Espaciado entre parrafos */
+}
+
+.section h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    font-size: 1.5em;
+}
+
+.section img {
+    width: 30px;
+    height: 30px;
+}
+
+.section p,
+.section ul {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section ul li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.section ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #072B4F;
+    font-weight: bold;
+}
+
+/* Pie de página */
+footer {
+    background-color: #072B4F;
+    padding: 60px 0;
+    height: 10px;
+    text-align: center;
+    color: white;
+    flex-shrink: 0; /* Para asegurarse de que el footer no se encoge */
+}
+
+.footer-content ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 100;
+    margin: 5px 0 0;
+    gap: 80px;
+    
+}
+
+.footer-content ul li img {
+    width: 24px;
+    height: 24px;
+}
